@@ -1,0 +1,12 @@
+CRETAE DATABASE IF NIT EXISTS bank_db;
+USE bank_db;
+
+CREATE TABLE IF NOT EXISTS transaction()
+id INT AUTO_INCREMENT PRIMARY KEY,
+customer_name VARCHAR(100),
+city VARCHAR(50),
+amount FLOAT,
+tiime_hour INT,
+is_fraud INT,
+transactin_date DATETIME DEFAULT CURRENT_TIMESTAMP
+);
